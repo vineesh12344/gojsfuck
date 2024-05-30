@@ -157,8 +157,8 @@ func TestEncode(t *testing.T) {
 	jsFuck := New()
 	jsFuck.Init()
 
-	want, _ := os.ReadFile("./test/test_encoded.js")
-	plain, _ := os.ReadFile("./test/test_plain.js")
+	want, _ := os.ReadFile("../test/test_encoded.js")
+	plain, _ := os.ReadFile("../test/test_plain.js")
 
 	encoded := jsFuck.Encode(string(plain))
 	got := jsFuck.Wrap(encoded, true, false)
@@ -173,7 +173,7 @@ func TestDecode(t *testing.T) {
 	jsFuck.Init()
 
 	want := `(    function(){        var Some="Hallo Welt!";        alert(Some);    }());`
-	data, _ := os.ReadFile("./test/test_encoded.js")
+	data, _ := os.ReadFile("../test/test_encoded.js")
 	got := jsFuck.Decode(string(data))
 
 	if got != want {
