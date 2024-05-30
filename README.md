@@ -48,20 +48,20 @@ import "github.com/vineesh12344/gojsfuck/jsfuck"
 ```go
 yourEncodedJS := "..."
 
-jsFuck := New()
-jsFuck.Init()
-fmt.Println(jsFuck.Decode(yourEncodedJS))
+decoder := jsfuck.New()
+decoder.Init()
+fmt.Println(decoder.Decode(yourEncodedJS))
 ```
 ### Encode
 ```go
 yourPlainJS := "alert(123);"
 
-jsFuck := New()
-jsFuck.Init()
+encoder := jsfuck.New()
+encoder.Init()
 
-encoded := jsFuck.Encode(yourEncodedJS)
+encoded := encoder.Encode(yourPlainJS)
 
 // Wrap in eval and parent scope execution
-wrapped := jsFuck.Wrap(true, true) 
+wrapped := jsFuck.Wrap(encoded, true, true) 
 fmt.Println(wrapped)
 ```
