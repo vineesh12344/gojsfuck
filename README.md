@@ -41,7 +41,7 @@ go get github.com/vineesh12344/gojsfuck
 
 ### Import
 ```go
-import github.com/vineesh12344/gojsfuck/jsfuck
+import "github.com/vineesh12344/gojsfuck/jsfuck"
 ```
 
 ### Decode
