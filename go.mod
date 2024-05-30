@@ -1,4 +1,4 @@
-module gojsfuck
+module github.com/vineesh12344/gojsfuck
 
 go 1.20
 

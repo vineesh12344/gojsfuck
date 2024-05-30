@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"gojsfuck/jsfuck"
+	"github.com/vineesh12344/gojsfuck/jsfuck"
 
 	"github.com/spf13/cobra"
 )
