@@ -36,8 +36,14 @@ go test . -v
 ## Package usage
 ### Install
 ```sh
-go get github.com/vineesh12344/gojsfuck/jsfuck
+go get github.com/vineesh12344/gojsfuck
 ```
+
+### Import
+```go
+import github.com/vineesh12344/gojsfuck/jsfuck
+```
+
 ### Decode
 ```go
 yourEncodedJS := "..."
