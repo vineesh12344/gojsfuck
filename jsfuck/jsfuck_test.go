@@ -1,4 +1,4 @@
-package main
+package jsfuck
 
 import (
 	"os"
@@ -102,8 +102,9 @@ func TestReplaceStrings(t *testing.T) {
 	jsFuck.replaceMap()
 	jsFuck.replaceStrings()
 
+	re := regexp.MustCompile(`[^\[\]\(\)\!\+]`)
 	for _, v := range jsFuck.MAPPING {
-		if found, _ := regexp.MatchString(`[^\[\]\(\)\!\+]`, v); found {
+		if re.MatchString(v) {
 			t.Fatalf("`%v` contains non-encoded characters", v)
 		}
 	}

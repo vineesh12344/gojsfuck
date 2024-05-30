@@ -1,4 +1,4 @@
-package main
+package jsfuck
 
 import (
 	"encoding/hex"

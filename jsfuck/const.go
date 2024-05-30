@@ -1,4 +1,4 @@
-package main
+package jsfuck
 
 const (
 	USE_CHAR_CODE = "USE_CHAR_CODE"

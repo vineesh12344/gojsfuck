@@ -1,4 +1,4 @@
-module github.com/karust/unjsfuck
+module gojsfuck
 
 go 1.20
 

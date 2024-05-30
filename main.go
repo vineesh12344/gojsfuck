@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 	"os"
+	"gojsfuck/jsfuck"
 
 	"github.com/spf13/cobra"
 )
 
 var (
-	jsFuck        = New()
+	jsFuck        = jsfuck.New()
 	isEval        = false
 	isParentScope = false
 )
